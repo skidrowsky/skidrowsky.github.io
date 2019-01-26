@@ -24,8 +24,8 @@ output {
 *문제점 및 해결 내용 : Logstash 실행시 아래 오류 발생하였고 JDK 버전 아래 bin 디렉토리로 sqljdbc_auth.dll 파일이 존재하지 않아 발생하는 문제.  
 Failed to load the sqljdbc_auth.dll cause :- no sqljdbc_auth in java.library.path
 
+
 해결책 : JDBC 파일 설치 한 다음 아래 파일을 찾아서 
-![sqljdbc_auth_path](https://user-images.githubusercontent.com/25881203/51785126-992a2d80-2196-11e9-8d57-28b0e0981478.png)
-아래 경로로 복사
-![sqljdbc_auth_targetpath](https://user-images.githubusercontent.com/25881203/51785135-a34c2c00-2196-11e9-8195-738508451f5a.png)
+sqljdbc_auth.dll 파일을 복사 후 아래 경로로 붙여넣기 
+복사할 경로: C:\Program Files\Java\jdk_version\bin
 
