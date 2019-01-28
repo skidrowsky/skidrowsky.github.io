@@ -6,10 +6,11 @@ categories: elastic
 
 logstash pipeline 실행하였을 때, 다음의 오류가 발생하였음.
 실행 구문은 아래와 같음
+
 '''
 logstash -f sql_customers.conf
-
-sql_customers.conf 파일 내용
+'''
+#### sql_customers.conf 파일 내용
 input {
   jdbc {
     jdbc_connection_string => "jdbc:sqlserver://60.100.94.85:1433;databaseName=Northwind;integratedSecurity=true;"
@@ -25,5 +26,11 @@ output {
     index => "customers"
   }
 }
-'''
+
+### 에러 
 Error jdbc_driver_library not loaded
+
+### 해결내용
+sqljdbc_4.2 디렉토리 경로를 변경함.
+변경 전 : C:\Program Files
+변경 후 : C:\ELK
