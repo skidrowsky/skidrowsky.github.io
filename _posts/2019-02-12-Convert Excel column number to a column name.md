@@ -1,4 +1,5 @@
 usage: string columnLetter = ColumnIndexToColumnLetter(100); // returns CV
+```c#
 static string ColumnIndexToColumnLetter(int colIndex)
 {
     int div = colIndex;
@@ -13,8 +14,9 @@ static string ColumnIndexToColumnLetter(int colIndex)
     }
     return colLetter;
 }
-
+```
 usage: int columnIndex = ColumnLetterToColumnIndex("XFD"); // returns 16384
+```c#
 static int ColumnLetterToColumnIndex(string columnLetter)
 {
     columnLetter = columnLetter.ToUpper();
@@ -27,3 +29,4 @@ static int ColumnLetterToColumnIndex(string columnLetter)
     }
     return sum;
 }
+```
