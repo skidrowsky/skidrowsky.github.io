@@ -1,4 +1,5 @@
-### 다음의 두가지 방식으로 curl 명령어를 입력할 수 있다.
+### elasticsearch의 인증 방식은 다음의 두가지 방식으로 curl 명령어를 입력할 수 있다.
+1. user명 입력
 curl -u elastic -XGET http://localhost:9200/classes?pretty
-
+2. user명과 password 입력
 curl --user elastic:shi_2019 -XGET http://localhost:9200/classes?pretty
