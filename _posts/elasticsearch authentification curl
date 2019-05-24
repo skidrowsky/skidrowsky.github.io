@@ -1,0 +1,4 @@
+### 다음의 두가지 방식으로 curl 명령어를 입력할 수 있다.
+curl -u elastic -XGET http://localhost:9200/classes?pretty
+
+curl --user elastic:shi_2019 -XGET http://localhost:9200/classes?pretty
